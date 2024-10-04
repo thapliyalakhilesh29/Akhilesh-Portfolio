@@ -88,24 +88,48 @@ footer {
     color: #fff;
     margin-top: 1rem;
 }
+
 /* Link color */
-.link{
+.link {
     color: blue;
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Padding between icons */
-  }
-  
-  .icon {
-    width: 50px;  /* Adjust the icon size */
+    gap: 30px;
+    /* Padding between icons */
+}
+
+.icon {
+    width: 50px;
+    /* Adjust the icon size */
     height: 50px;
     transition: transform 0.3s ease;
     margin-top: 20px;
-  }
-  
-  .icon:hover {
-    transform: scale(1.2); /* Slight hover effect */
-  }
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    /* Slight hover effect */
+}
+
+.content-with-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+}
+
+.profile-picture img {
+    width: 150px;
+    /* Adjust size as needed */
+    height: 150px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid black;
+}
