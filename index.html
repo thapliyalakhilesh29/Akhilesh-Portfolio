@@ -1,104 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhilesh Portfolio</title>
-    <link rel="icon" href="/images/portfolio.png" type="images/png">
+    <title>Portfolio - Akhilesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="section content-with-profile">
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Akhilesh Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-3" href="images/Akhilesh Resume.pdf" download="Akhilesh_Resume.pdf"><img src="images/icons8-download-resume-40.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- About Section -->
+<section id="about" class="section bg-light py-5">
+    <div class="container content-with-profile">
         <div class="content">
-            <h1>Welcome to My QA Portfolio</h1>
-            <p>Hello! I'm AKHILESH THAPLIYAL, a passionate QA professional with over 5 years of experience in software
-                testing, specializing in web and native applications. Proficient in SDLC, STLC, Python, Selenium
-                WebDriver,
-                API testing (RESTful & GraphQL) using POSTMAN and Performance testing using JMeter. Strong knowledge of
-                Agile-Scrum methodologies and experienced in test case design, defect tracking, and data validation with
-                MySQL and MongoDB. Skilled in tools like Jira, Notion, and Git. Excellent problem-solving, analytical,
-                and
-                communication skills, with a proven ability to work independently and in high-pressure environments.</p>
+            <h2>About Me</h2>
+            <p>Hello! I'm AKHILESH THAPLIYAL, a passionate QA professional with over 5 years of experience in software testing, specializing in web and native applications. Proficient in SDLC, STLC, Python, Selenium WebDriver, API testing (RESTful & GraphQL) using POSTMAN and Performance testing using JMeter. Strong knowledge of Agile-Scrum methodologies and experienced in test case design, defect tracking, and data validation with MySQL and MongoDB. Skilled in tools like Jira, Notion, and Git. Excellent problem-solving, analytical, and communication skills, with a proven ability to work independently and in high-pressure environments.</p>
         </div>
         <div class="profile-picture">
             <img src="images/profile pic.jpg" alt="Profile Picture">
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Manual Testing & Automation Testing</li>
-            <li>Selenium WebDriver with Pytest Framework & BDD Framework</li>
-            <li>Test Planning and Execution</li>
-            <li>Bug Tracking with JIRA / Notion / Trello / Project Deck</li>
-            <li>API Testing with Postman</li>
-            <li>Performance Testing with JMeter</li>
-        </ul>
-    </section>
+<!-- Skills Section -->
+<section id="skills" class="section bg-white py-5">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="row text-center">
+            <!-- Skill 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-item">
+                    <img src="path/to/selenium-logo.png" alt="Selenium" class="img-fluid mb-2" style="width: 50px;">
+                    <p>Selenium</p>
+                </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-item">
+                    <img src="path/to/postman-logo.png" alt="Postman" class="img-fluid mb-2" style="width: 50px;">
+                    <p>Postman</p>
+                </div>
+            </div>
+            <!-- Add more skills similarly -->
+        </div>
+    </div>
+</section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: CloseWise (Web App) </h3>
-            <p>CloseWise, an innovative signing service and business management platform for the notary industry.
-                Enhanced the platform with features such as native calendar sync, bidding automation, automated invoice
-                generation, QuickBooks integration, white labelling, bulk messaging, PDF and AI parsing. These features
-                streamline operational workflows, improve appointment management, and optimize transaction tracking,
-                ultimately boosting efficiency and client satisfaction.</p>
+<!-- Projects Section -->
+<section id="projects" class="section bg-light py-5">
+    <div class="container">
+        <h2>My Projects</h2>
+        <!-- Project 1 -->
+        <div class="row my-4">
+            <div class="col">
+                <div class="card project">
+                    <img src="https://www.closewise.com/wp-content/uploads/2023/01/closewise-dark-tagline.webp" class="card-img-top" alt="CloseWise">
+                    <div class="card-body">
+                        <h3 class="card-title">CloseWise (Web App)</h3>
+                        <p class="card-text">CloseWise, an innovative signing service and business management platform for the notary industry. Enhanced the platform with features such as native calendar sync, bidding automation, automated invoice generation, QuickBooks integration, white labelling, bulk messaging, PDF and AI parsing. These features streamline operational workflows, improve appointment management, and optimize transaction tracking, ultimately boosting efficiency and client satisfaction.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2: Grouped (Web App) </h3>
-            <p>Grouped, a subscription-based social media platform designed for content creators and their audiences.
-                Enhanced the app with key features including customizable subscription tiers, direct messaging, content
-                monetization options (e.g., pay-per-view posts and tips), live streaming capabilities, content
-                management tools, and integrated analytics and public polling. Focused on user experience optimization,
-                security enhancements, and seamless content sharing, facilitating an engaging and secure environment for
-                creators and subscribers.</p>
+        <!-- Project 2 -->
+        <div class="row my-4">
+            <div class="col">
+                <div class="card project">
+                    <img src="path/to/ayurbala-logo.png" class="card-img-top" alt="Grouped">
+                    <div class="card-body">
+                        <h3 class="card-title">Grouped (Web App)</h3>
+                        <p class="card-text">Grouped, a subscription-based social media platform designed for content creators and their audiences. Enhanced the app with key features including customizable subscription tiers, direct messaging, content monetization options (e.g., pay-per-view posts and tips), live streaming capabilities, content management tools, and integrated analytics and public polling. Focused on user experience optimization, security enhancements, and seamless content sharing, facilitating an engaging and secure environment for creators and subscribers</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project"></div>
-        <h3>Project 3: StatClub (Web App, iOS, Android) </h3>
-        <p>Stat Club, an e-learning platform offering both recorded and live sessions for a variety of courses. The
-            platform enhances user engagement through interactive quizzes after each lesson, rewarding correct answers
-            with redeemable coins. Stat Club specializes in providing practical, industry-focused education led by
-            experienced professionals, equipping users with the essential skills needed for success in profitable trades
-            and businesses.</p>
+        <!-- Project 3 -->
+        <div class="row my-4">
+            <div class="col">
+                <div class="card project">
+                    <img src="path/to/ayurbala-logo.png" class="card-img-top" alt="StatClub">
+                    <div class="card-body">
+                        <h3 class="card-title">StatClub (Web App, iOS, Android)</h3>
+                        <p class="card-text">Stat Club, an e-learning platform offering both recorded and live sessions for a variety of courses. The platform enhances user engagement through interactive quizzes after each lesson, rewarding correct answers with redeemable coins. Stat Club specializes in providing practical, industry-focused education led by experienced professionals, equipping users with the essential skills needed for success in profitable trades and businesses.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <!-- Project 4 -->
+        <div class="row my-4">
+            <div class="col">
+                <div class="card project">
+                    <img src="path/to/ayurbala-logo.png" class="card-img-top" alt="Ayurbala">
+                    <div class="card-body">
+                        <h3 class="card-title">Ayurbala (Web App)</h3>
+                        <p class="card-text">Ayurbala is an e-commerce platform dedicated to natural and herbal supplements, offering a comprehensive product catalog with detailed descriptions and personalized recommendations. Key features include advanced search filters, user reviews, secure payment options, and order tracking, all designed to enhance the shopping experience. Optimized for both web and mobile, Ayurbala ensures a smooth, cross-platform experience for users seeking holistic health and wellness solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="row my-4">
+            <div class="col">
+                <div class="card project">
+                    <img src="path/to/book-your-office-logo.png" class="card-img-top" alt="Book Your Office">
+                    <div class="card-body">
+                        <h3 class="card-title">Book Your Office (Web App)</h3>
+                        <p class="card-text">Book Your Office is a web app designed to simplify the process of renting vacant office spaces. It allows businesses and individuals to easily search, book, and manage office rentals based on location, size, and amenities. Key features include a detailed listing of available office spaces, a secure booking system, real-time availability updates, user reviews, and integrated payment options. Optimized for both desktop and mobile platforms, the app ensures a seamless, efficient experience for users looking to find flexible office solutions that meet their needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add more projects similarly, each occupying its own row -->
+    </div>
+</section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+<!-- Contact Section -->
+<section id="contact" class="section bg-white py-5">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to <a href="mailto:akhilesh@example.com">reach out</a> via email for project inquiries or collaborations.</p>
         <div class="icon-container">
-            <a href="https://www.linkedin.com/in/akhilesh-thapliyal-84b79522a" target="_blank">
-                <img src="/images/linkedin.png" alt="LinkedIn" class="icon">
             </a>
-            <a href="https://github.com/thapliyalakhilesh29" target="_blank">
-                <img src="/images/github.png" alt="github" class="icon">
+            <a href="https://www.linkedin.com/in/akhilesh-thapliyal-84b79522a" target="_blank" class="icon">
+                <img src="images/linkedin.png" alt="LinkedIn">
             </a>
-            <a href="mailto:thapliyalakhilesh29@gmail.com" target="_blank">
-                <img src="/images/apple.png" alt="Email" class="icon">
+            <a href="https://github.com/thapliyalakhilesh29" target="_blank" class="icon">
+                <img src="images/github.png" alt="GitHub">
             </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Akhilesh Thapliyal. All rights reserved.</p>
-    </footer>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Akhilesh. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap and JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('.active').classList.remove('active');
+            link.classList.add('active');
+        });
+    });
+</script>
 </body>
-
 </html>
